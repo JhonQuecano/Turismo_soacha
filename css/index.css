@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flexbox;
+    background-color: #ECEFF1;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/semana/RYUQPSXHFNCNFBWTQTENGTYQV4.jpg);
+}
+.header__title {
+    font-size: 30px;
+    color: white;
+}
+
+
+.main__contenedor {
+    display: flex;
+    width: 100%;
+    margin: 20px 0 60px;
+}
+.main__texto {
+    text-align: center;
+    align-content: center;
+    width: 33.3%;
+    padding: 10px;
+}
+.main__video {
+    padding: 10px;
+    width: 33.3%;
+}
+.main__imagenes {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.main__imagen {
+
+    height: 250 px;
+    width: 23%;
+
+    padding: 0.7%;
+}
+.main__imagen:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2); 
+}
+
+
+.footer {
+    background-color: #7EC229;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-self: flex-end;
+}
+.footer__info {
+    width: 50%;
+    color: black;
+}
+.footer__info--left {
+    text-align: end;
+    padding-right: 10px;
+    align-content: center;
+}
+.footer__info--right {
+    text-align: start;
+    margin-left: 10px;
+    align-content: center;
+}
+
+
+@media (max-width: 768px) {
+    html, body {
+        height: auto;
+    }
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .header__title {
+        margin-bottom: 10px;
+    }
+    .header__button {
+        width: 100%;
+        text-align: center;
+    }
+    .main__contenedor {
+        flex-direction: column;
+        align-items: center;  
+        width: 100%;
+    }
+    .main__video {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .main__texto {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .main__imagenes {
+        flex-direction: column;
+        align-items: center;  
+    }
+    .main__imagen {
+        max-width: 100%;
+        height: 20%;
+        width: 80%;
+    }
+    .footer {
+        height: auto;
+    }
+}
+    
